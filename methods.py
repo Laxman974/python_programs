@@ -42,5 +42,5 @@ match choice:
         marks.popitem()
         print('Remove marks form last ',marks)
     case _:
-        print('choice is not matched')
+        print('choice is not matched plzz enter proper choice')
     
