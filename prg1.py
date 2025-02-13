@@ -1,4 +1,4 @@
-x = 42
+x = 22
 print(x)
 
 name = "Laxman"
