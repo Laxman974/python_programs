@@ -6,7 +6,7 @@ print('5,Setdefault')
 print('6,Update')
 print('7,Pop')
 print('8,Popitem')
-
+print()
 print('Enter the choice you want to saw')
 choice=int(input())
 print()
@@ -24,11 +24,23 @@ match choice:
     case 3:
         item=marks.items()
         print('The item of marks :',item)
-    #case 4:
-    #case 5:
-    #case 6:
-    #case 7:
-    #case 8:
+    case 4:
+        value_a=marks.get('ob')
+        print('The ob marks is :',value_a)
+    case 5:
+        add=marks.setdefault('adbms',23)
+        print('the add new subject with marks :',add)
+        print()
+        print(marks)
+    case 6:
+        marks.update({'ob':23})
+        print('The updated marks ',marks)
+    case 7:
+        marks.pop('fl')
+        print('remove the marks',marks)
+    case 8:
+        marks.popitem()
+        print('Remove marks form last ',marks)
     case _:
-        print('You want to exit')
+        print('choice is not matched')
     
